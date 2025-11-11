@@ -19,15 +19,15 @@ body{
 
 .site-header{border-bottom:2px solid #000;background:var(--bg);box-shadow:0 2px 4px rgba(0,0,0,0.05)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
-.logo{font-weight:700;letter-spacing:2px;margin:0;color:var(--accent);font-size:18px}
+.logo{font-family:'Playfair Display', serif;font-weight:700;letter-spacing:3px;margin:0;color:var(--accent);font-size:22px;font-style:italic}
 .main-nav a{color:var(--accent);text-decoration:none;margin-left:18px;font-weight:500;transition:color 0.3s ease}
 .main-nav a:hover{color:#333}
 
 /* Brand (logo + title) */
 .brand{display:flex;align-items:center;gap:12px}
-.site-logo{height:48px;width:auto;display:block;border-radius:6px;object-fit:contain}
+.site-logo{height:120px;width:auto;display:block;border-radius:6px;object-fit:contain}
 @media (max-width:480px){
-  .site-logo{height:36px}
+  .site-logo{height:85px}
   .logo{font-size:16px}
 }
 /* Tagline under the main title */
