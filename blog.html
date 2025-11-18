@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog — LIISHON VISUALS</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Photography tips, tutorials, and insights from LIISHON VISUALS." />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G85SJZVKCZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G85SJZVKCZ');
+    </script>
+    <style>
+      .blog-hero {
+        background: linear-gradient(135deg, #000 0%, #333 100%);
+        color: #fff;
+        padding: 60px 20px;
+        text-align: center;
+      }
+      .blog-hero h1 {
+        font-size: 42px;
+        margin: 0 0 16px;
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+      }
+      .blog-hero p {
+        font-size: 18px;
+        color: #ccc;
+        margin: 0;
+      }
+      .blog-container {
+        padding: 60px 0;
+      }
+      .blog-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 40px;
+        align-items: start;
+      }
+      .blog-post {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+        margin-bottom: 32px;
+      }
+      .blog-post:hover {
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        transform: translateY(-4px);
+      }
+      .blog-post-image {
+        width: 100%;
+        height: 250px;
+        background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #999;
+        font-size: 14px;
+      }
+      .blog-post-content {
+        padding: 24px;
+      }
+      .blog-post-date {
+        font-size: 13px;
+        color: #999;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+      }
+      .blog-post-title {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 8px 0 12px;
+        color: #000;
+        font-family: 'Playfair Display', serif;
+      }
+      .blog-post-excerpt {
+        font-size: 15px;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 16px;
+      }
+      .blog-post-meta {
+        font-size: 13px;
+        color: #999;
+      }
+      .blog-sidebar {
+        position: sticky;
+        top: 20px;
+      }
+      .sidebar-box {
+        background: #f9f9f9;
+        padding: 24px;
+        border-radius: 8px;
+        margin-bottom: 24px;
+      }
+      .sidebar-box h3 {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0 0 16px;
+        color: #000;
+      }
+      .sidebar-box ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .sidebar-box li {
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+      }
+      .sidebar-box li:last-child {
+        border-bottom: none;
+      }
+      .sidebar-box a {
+        color: #0066cc;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s ease;
+      }
+      .sidebar-box a:hover {
+        color: #0052a3;
+        text-decoration: underline;
+      }
+      @media (max-width: 900px) {
+        .blog-grid {
+          grid-template-columns: 1fr;
+        }
+        .blog-sidebar {
+          position: relative;
+          top: 0;
+        }
+      }
+      @media (max-width: 768px) {
+        .blog-hero {
+          padding: 40px 20px;
+        }
+        .blog-hero h1 {
+          font-size: 28px;
+        }
+        .blog-container {
+          padding: 40px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <img src="LIISHON VISUALS LOGO.jpg" alt="LIISHON VISUALS Logo" class="site-logo">
+          <div>
+            <h1 class="logo">LIISHON VISUALS</h1>
+            <p class="tagline">LIISHON SHOT IT!</p>
+          </div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="testimonials.html">Testimonials</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="blog-hero">
+        <div class="container">
+          <h1>LIISHON Blog</h1>
+          <p>Photography tips, tutorials, and behind-the-scenes insights</p>
+        </div>
+      </section>
+
+      <section class="blog-container container">
+        <div class="blog-grid">
+          <!-- Main Blog Posts -->
+          <div>
+            <!-- Blog Post 1 -->
+            <article class="blog-post">
+              <div class="blog-post-image">📸 Featured Image</div>
+              <div class="blog-post-content">
+                <p class="blog-post-date">November 15, 2025</p>
+                <h2 class="blog-post-title">5 Tips for Perfect Portrait Photography</h2>
+                <p class="blog-post-excerpt">Learn the essential techniques for capturing stunning portraits. From lighting to posing, we'll cover everything you need to know to take professional-looking portrait photos...</p>
+                <p class="blog-post-meta">By LIISHON VISUALS • 5 min read</p>
+              </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-post">
+              <div class="blog-post-image">📸 Featured Image</div>
+              <div class="blog-post-content">
+                <p class="blog-post-date">November 10, 2025</p>
+                <h2 class="blog-post-title">Mastering Drone Photography: A Beginner's Guide</h2>
+                <p class="blog-post-excerpt">Aerial photography is becoming increasingly popular. In this guide, we break down the fundamentals of drone photography, safety regulations, and how to capture breathtaking aerial shots...</p>
+                <p class="blog-post-meta">By LIISHON VISUALS • 7 min read</p>
+              </div>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="blog-post">
+              <div class="blog-post-image">📸 Featured Image</div>
+              <div class="blog-post-content">
+                <p class="blog-post-date">November 5, 2025</p>
+                <h2 class="blog-post-title">The Ultimate Wedding Photography Checklist</h2>
+                <p class="blog-post-excerpt">Planning a wedding shoot? We've compiled the essential checklist to ensure you don't miss any important moments. From pre-wedding prep to post-shoot tips, we've got you covered...</p>
+                <p class="blog-post-meta">By LIISHON VISUALS • 8 min read</p>
+              </div>
+            </article>
+
+            <!-- Blog Post 4 -->
+            <article class="blog-post">
+              <div class="blog-post-image">📸 Featured Image</div>
+              <div class="blog-post-content">
+                <p class="blog-post-date">October 28, 2025</p>
+                <h2 class="blog-post-title">Lighting Techniques Every Photographer Should Know</h2>
+                <p class="blog-post-excerpt">Lighting is everything in photography. Explore different lighting setups, modifiers, and techniques that will elevate your photography game to the next level...</p>
+                <p class="blog-post-meta">By LIISHON VISUALS • 6 min read</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="blog-sidebar">
+            <!-- Categories -->
+            <div class="sidebar-box">
+              <h3>Categories</h3>
+              <ul>
+                <li><a href="#">Photography Tips</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Behind the Scenes</a></li>
+                <li><a href="#">Equipment Reviews</a></li>
+                <li><a href="#">Client Stories</a></li>
+              </ul>
+            </div>
+
+            <!-- Recent Posts -->
+            <div class="sidebar-box">
+              <h3>Recent Posts</h3>
+              <ul>
+                <li><a href="#">5 Tips for Perfect Portrait Photography</a></li>
+                <li><a href="#">Mastering Drone Photography</a></li>
+                <li><a href="#">Wedding Photography Checklist</a></li>
+                <li><a href="#">Lighting Techniques</a></li>
+              </ul>
+            </div>
+
+            <!-- Subscribe -->
+            <div class="sidebar-box">
+              <h3>Subscribe</h3>
+              <p style="font-size: 14px; color: #555; margin: 0;">Get photography tips and updates delivered to your inbox.</p>
+              <form style="margin-top: 12px;">
+                <input type="email" placeholder="Your email" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px; margin-bottom: 10px;">
+                <button type="submit" class="btn" style="width: 100%; padding: 10px; font-size: 13px;">Subscribe</button>
+              </form>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> LIISHON VISUALS — All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
